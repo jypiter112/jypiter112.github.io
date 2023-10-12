@@ -6,7 +6,7 @@ function gotoreservation(){
     window.location.replace('varaa.html');
 }
 function gotohome(){
-    window.location.replace('etusivu.html');
+    window.location.replace('index.html');
 }
 function gotolomake(){
     window.location.replace('lomake.html');
