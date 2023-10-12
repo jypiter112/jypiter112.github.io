@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <!-- Meta data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="tyylit/varaa-tyyli.css">
+        
+        <!-- Ionics icons -->
+        <!-- https://github.com/ionic-team/ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+        <!-- End of import modules -->
+
+        <!-- Internal javascript files -->
+        <script type="text/javascript" src="javascript/funktiot.js"></script>
+
+        <!-- End of meta data -->
+        <title>Yli-travel  -  Varaa matka</title>
+        <link rel="icon" type="image/x-icon" href="/kuvat/favicon.ico">
+    </head>
+    <body>
+        <!-- GDPR tietosuoja POP-UP -->
+        <!-- <script>popupgdpr();</script> -->
+        <main>
+            <header>
+                <img class="logo" src="kuvat/ylitravel-logo.png">
+            </header>
+            <div class="div-booking">
+                <!-- TO DO GET BOOK DATA FROM FIRST PAGE -->
+                <!-- GENERAETE PAGE BASED ON THAT HERE -->
+                <h2>Lomakohteen nimi</h2>
+                <div class="div-tietoja">
+                    <p class="p-tietoja-1">Lomakohteen tiedot jn yms. Kuvia, kuvia, kuvia Lorem ipsum upades apsades cool place. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis dictum viverra. Donec sed nisi nisl, eget fermentum nulla. Etiam in elementum magna. In nec sodales eros. Fusce facilisis augue sed metus mattis eu malesuada nisi volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam a nunc augue, sed tristique sapien.</p>
+                    <img src="kuvat/6.jpg">
+                </div>
+                <div class="div-tietoja">
+                    <img class="img-2" src="kuvat/5.jpg">
+                    <p class="p-tietoja-2">Lomakohteen tiedot jn yms. Kuvia, kuvia, kuvia Lorem ipsum upades apsades cool place. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis dictum viverra. Donec sed nisi nisl, eget fermentum nulla. Etiam in elementum magna. In nec sodales eros. Fusce facilisis augue sed metus mattis eu malesuada nisi volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam a nunc augue, sed tristique sapien.</p>
+                </div>
+            </div>
+            <form class="form-booking-and-userinf0">
+                <div class="div-booking">
+                    <h2>Varaus lomake</h2>
+                    <span>Punaisella merkityt ovat pakollista tietoa.</span><br>
+                    <!-- booking info form -->
+                    <div class="booking-journeytype">
+                        <span>Matkustus suunta </span><span id="unused" style="color:red">*</span><br>
+                        <select>
+                            <option style="color:lightgrey">Valitse vaihtoehto</option>
+                            <option>Yksisuuntainen</option>
+                            <option>Meno-paluu</option>
+                        </select>
+                    </div>
+                    <div class="booking-numberofpassengers">
+                        <span>Matkustajien määrä </span><span id="input-matkustajat" style="color:red">*</span><br>
+                        <input class="input-num-short" type="number" placeholder="1" min="1">
+                    </div>
+                    <div class="booking-passengerinfo">
+                        <span>Matkustajien henkilötunnukset </span><span id="unused" style="color:red">*</span><br>
+                        <textarea id="textarea-extramessage" placeholder="Matti Meikäläinen: henkilötunnus ..."></textarea>
+                    </div>
+                    <!-- TO DO (javascript) poista punaiset merkit ID=unused-->
+
+                    <!--CLASS nimeys seuraa formaattia: booking-(objectname)-->
+                    <div class="booking-fullname">
+                        <span>Kokonimi </span><span id="unused" style="color:red">*</span><br>
+                        <input class="input-name" type="text" placeholder="Etunimi">
+                        <input class="input-name" type="text" placeholder="Sukunimi"><br>
+                    </div>
+                    <div class="booking-email">
+                        <span>Sähköposti </span><span id="unused" style="color:red">*</span><br>
+                        <input type="text" placeholder="Eg: esim@esim.com"><br>
+                    </div>
+                    <div class="booking-phonenumber">
+                        <span>Puhelinnumero </span><span id="unused" style="color:red">*</span><br>
+                        <!-- TO DO: Validate number as in phone number -->
+                        <!-- TO DO: Disable number bar on the right -->
+                        <input class="input-fixlength" type="text" placeholder="040 123 1234"><br>
+                    </div>
+                    <div class="booking-days">
+                        <div class="booking-depart-date">
+                            <span>Lähtö päivä ja aika </span><span id="unused" style="color:red">*</span><br>
+                            <input type="date">
+                            <input type="time"><br>
+                        </div>
+                        <div class="booking-return-date">
+                            <span>Paluu päivä ja aika </span><span id="unused" style="color:red">*</span><br>
+                            <input type="date">
+                            <input type="time"><br>
+                        </div>
+                    </div>
+                    <div class="booking-katuosoite">
+                        <span>Katuosoitteesi </span><span id="unused" style="color:red">*</span><br>
+                        <input type="text" placeholder="Eg: Mannerheimintie 1 A1">
+                    </div>
+                    <div class="booking-extramessage">
+                        <span>Lisä viesti</span><br>
+                        <textarea id="textarea-extramessage"></textarea><br>
+                        <input class="input-submit" type="submit" text="Lähetä">
+                    </div>
+                </div>
+                <div class="div-booking">
+                    <h2>Toinen kohde tai ei se mitä etsit?</h2>
+                    <button type="button" class="input-submit" onclick="gotohome();">Palaa takaisin</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

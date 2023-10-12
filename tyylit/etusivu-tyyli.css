@@ -1,0 +1,216 @@
+/* Default styles */
+main{
+    font-family: 'The Northern Block','Arial';
+}
+p {
+    color: rgb(80, 80, 80);
+}
+input{
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: grey;
+
+    width: 100%;
+    min-width: 30px;
+    max-width: 100px;
+
+    padding: 4px 2px 2px 4px;
+    font-family: 'The Northern Block','Arial';
+    color: rgb(134, 134, 134);
+}
+.input-matkustajat {
+    width: 20px;
+}
+button{
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: rgb(197, 197, 197);
+    background-color: white;
+
+    padding: 4px 2px 2px 4px;
+}
+button:hover{
+    background-color: lightgrey;
+}
+span{
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 40%;
+    max-width: 400px;
+    min-width: 20%;
+    min-width: 400px;
+
+    min-height: 15%;
+    max-height: 20%;
+}
+/* End of header */
+
+/* Search bar */
+.div-searchbar{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+.div-searchbar-item{
+    width: auto;
+    padding-left: 4%;
+}
+.searchbar-num {
+    width: 100%;
+    max-width: 5px;
+}
+/* destination default css*/
+.div-destinations{
+    display:grid;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.destination{
+    display: flex;
+    flex-direction: row;
+    height: 95%;
+    width: 85%;
+    min-height: 200px;
+    min-width: 400px;
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px grey;
+    background-color: rgba(236, 236, 236, 0.445);
+}
+.destination-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    flex-wrap: nowrap;
+
+    grid-row: 1;
+    grid-column: 2;
+
+    border-radius: 10px;
+}
+.destination-img{
+    width: 20%;
+    max-width:200px;
+    min-width: 200px;
+    height: 180px;
+    padding: 1% 1% 1%;
+
+    object-fit: fill;
+    grid-row: 1;
+    grid-column: 1;
+
+    border-radius: 10px;
+}
+.destination-choose{
+    display:grid;
+    background-color: lightblue;
+    margin-left:auto;
+
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+
+    size: 100%;
+    max-height: 100%;
+    grid-row: 2;
+
+    border-radius: 0px 10px 10px 0px;
+
+}
+.destination-price{
+    color: darkred;
+}
+
+/* Info (bottom of page) */
+.div-info{
+    height: 100%;
+    width: 100%;
+    height: auto;
+    /*position: absolute;*/
+    bottom: 0;
+
+    display: flex;
+    text-align: center;
+    margin: auto;
+    position: bottom;
+    flex-direction: column;
+    background-color: lightblue;
+}
+.foot-top{
+    width: 100%;
+    height:100%;
+    height: 4px;
+    background-color: rgb(49, 49, 49);
+}
+.div-info-contact {
+    margin-bottom: 4%;
+}
+.lisaa-nappi{
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+#remove-me{
+    border-top: none;
+}
+
+@media only screen and (max-width: 770px){
+    input{
+        width: 70px;
+    }
+    .destination{
+        flex-direction: column;
+        height: 95%;
+        min-height: 400px;
+        margin: 5%;
+    }
+    .destination-img{
+        min-width: 98%;
+        height: 200px;
+        object-fit: fill;
+    }
+    .destination-choose{
+        margin: 0px;
+        margin-top: 20px;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+
+        border-radius: 0px 0px 10px 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        margin: 2px;
+    }
+}
