@@ -37,9 +37,19 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
-function etusivu_generate(){
-    var num = getRndInteger(1, 5);
-    var destinations = ["Cambodia", "Nigeria", "Pudasjärvi", "Mongolia", "Kazakhstan"];
+function etusivu_generate(custom_destination = false){
+    var num = getRndInteger(1, 5); var destinations = [];
+    if(custom_destination){
+        var searchresult = document.getElementById("etsi").value;
+        document.getElementById("etsi").value = "";
+        destinations.push(searchresult);
+        destinations.push(searchresult);
+        destinations.push(searchresult);
+    }
+    else
+    {
+        destinations = ["Cambodia", "Nigeria", "Pudasjärvi", "Mongolia", "Kazakhstan"];
+    }
     /* TO DO: FOR LOOP JOKA TEKEE TÄMÄN NOPEASTI */
     for(let x = 1; x <= 5; x++) {
         num += 1;
@@ -78,15 +88,7 @@ function lisaakohteita(){
     etusivu_generate();
     document.getElementById("remove-me").remove();
 }
-/*  TO BE EXTENDED 
-    WORK IN PROGRESS ... ... ...
-*/
-function set_date_input(){
-    var today = new Date();
-
-    let year = today.getFullYear();
-    let month = today.getMonth();
-    let day = today.getDate();
-
-    let dateStr = '${year}-${month}-${day}'
+function etsikohteita(){
+    document.getElementById("dest-list").innerHTML = "";
+    etusivu_generate(true);
 }

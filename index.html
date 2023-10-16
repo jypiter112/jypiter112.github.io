@@ -36,19 +36,22 @@
                 <div class="div-searchbar-item">
                     <ion-icon class="searchbar-searchicon" name="search-outline"></ion-icon>
                     <span>Minne? </span>
-                    <input type="text" class="searchbar-pad" placeholder="Intia, Rooma ...">
+                    <input type="text" class="searchbar-pad" id="etsi" placeholder="Intia, Rooma ...">
                 </div>
                 <div class="div-searchbar-item">
                     <span>Lähtö </span>
-                    <input type="date" class="searchbar-pad" min="2023-07-18T00:00" max="2024-01-01T00:00">
+                    <input type="date" class="searchbar-pad" id="lahto" min="2023-07-18T00:00" max="2024-01-01T00:00">
                 </div>
                 <div class="div-searchbar-item">
                     <span>Paluu </span>
-                    <input type="date" class="searchbar-pad" min="2023-07-18T00:00" max="2024-01-01T00:00">
+                    <input type="date" class="searchbar-pad" id="paluu" min="2023-07-18T00:00" max="2024-01-01T00:00">
                 </div>
                 <div class="div-searchbar-item">
                     <span>Matkustajat </span>
                     <input type="number" class="searchbar-num" min="1" max="12" placeholder="1">
+                </div>
+                <div>
+                    <button class="searchbar-etsi" onclick="etsikohteita()">Etsi</button>
                 </div>
             </div>
             <!-- End of search bar -->

@@ -71,6 +71,12 @@ header {
     width: auto;
     padding-left: 4%;
 }
+.searchbar-etsi{
+    width: 70px;
+    height: 40px;
+    margin: auto;
+    margin-left: 20px;
+}
 .searchbar-num {
     width: 100%;
     max-width: 5px;
@@ -206,6 +212,11 @@ header {
         height: 100%;
 
         border-radius: 0px 0px 10px 10px;
+    }
+    .searchbar-etsi{
+        width: auto;
+        min-width: 40px;
+        margin-left: auto;
     }
     h2{
         text-align: center;
