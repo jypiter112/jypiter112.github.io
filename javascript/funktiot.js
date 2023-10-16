@@ -41,6 +41,7 @@ function etusivu_generate(custom_destination = false){
     var num = getRndInteger(1, 5); var destinations = [];
     if(custom_destination){
         var searchresult = document.getElementById("etsi").value;
+        if(Object.keys(searchresult).length == 0) { destinations = ["Cambodia", "Nigeria", "Pudasjärvi", "Mongolia", "Kazakhstan"]; }
         document.getElementById("etsi").value = "";
         destinations.push(searchresult);
         destinations.push(searchresult);
