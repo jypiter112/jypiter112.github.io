@@ -59,7 +59,7 @@ function etusivu_generate(custom_destination = false){
         var price = 311.76 * num;
         let input = ' \
         <div class="destination"> ' +
-        '<img class="destination-img" src="kuvat/'+ num.toString() +'.jpg">' + '\
+        '<img class="destination-img" alt="Destination image"src="kuvat/'+ num.toString() +'.jpg">' + '\
         <div class="destination-info"> \
             <h2 class="destination-info-h2">'+ destinations[num].toString() +'</h2> \
             <p>Suited for: Students, couples and business</p> \

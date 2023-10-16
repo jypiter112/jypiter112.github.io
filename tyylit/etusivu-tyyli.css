@@ -140,7 +140,6 @@ header {
     padding-bottom: 2%;
     padding-right: 2%;
 
-    size: 100%;
     max-height: 100%;
     grid-row: 2;
 
@@ -162,7 +161,6 @@ header {
     display: flex;
     text-align: center;
     margin: auto;
-    position: bottom;
     flex-direction: column;
     background-color: lightblue;
 }
